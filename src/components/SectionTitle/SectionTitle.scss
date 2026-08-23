@@ -1,0 +1,35 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.section-title {
+  margin-bottom: $spacing-3xl;
+  text-align: center;
+
+  &__heading {
+    font-size: $font-size-2xl;
+    margin-bottom: $spacing-md;
+    position: relative;
+    display: inline-block;
+
+    @include respond-to(md) {
+      font-size: $font-size-3xl;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 48px;
+      height: 3px;
+      background: $color-accent;
+      margin: $spacing-md auto 0;
+      border-radius: $radius-full;
+    }
+  }
+
+  &__subtitle {
+    color: $color-text-muted;
+    font-size: $font-size-md;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}

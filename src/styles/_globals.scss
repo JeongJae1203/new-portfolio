@@ -1,0 +1,58 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.container {
+  width: 100%;
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 $container-padding;
+}
+
+.section {
+  padding: $spacing-4xl 0;
+
+  @include respond-to(md) {
+    padding: $spacing-5xl 0;
+  }
+}
+
+// Buttons
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-sm;
+  padding: 0.85rem 1.75rem;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
+  border-radius: $radius-md;
+  transition: all $transition-base;
+  @include focus-ring;
+
+  &--primary {
+    background: $color-accent;
+    color: white;
+
+    &:hover {
+      background: $color-accent-light;
+      box-shadow: $shadow-glow;
+      transform: translateY(-2px);
+    }
+  }
+
+  &--outline {
+    border: 1px solid $color-border-light;
+    color: $color-text;
+
+    &:hover {
+      border-color: $color-accent;
+      color: $color-accent-light;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+// Scroll reveal
+[data-reveal] {
+  @include reveal-animation;
+}
