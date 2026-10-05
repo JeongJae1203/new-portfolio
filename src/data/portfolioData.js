@@ -1,3 +1,5 @@
+import neverWatchLaterImg from '../assets/thumbnail/neverwatchlater.png';
+
 export const profile = {
   name: '이정재',
   role: '프론트엔드 개발자',
@@ -113,7 +115,7 @@ export const projects = [
     description:
       '유튜브 ’나중에 볼 동영상’을 Gemini AI 3줄 요약과 D-Day 시스템으로 자동 정리해 주는 린(Lean) 웹 서비스',
     tags: ['React.js', 'API', 'CSS Modules', 'Vite', 'Gemini API', 'Node.js', 'Express.js', 'MongoDB'],
-    image: 'https://images.unsplash.com/photo-1504608524841-42fe6f008b32?w=800&q=80',
+    image: neverWatchLaterImg,
     liveUrl: 'https://neverwatchlater-wine.vercel.app/',
     githubUrl: 'https://github.com/st20916/neverwatchlater',
     featured: true,
