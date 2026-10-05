@@ -107,17 +107,17 @@ export const projects = [
     githubUrl: 'https://github.com/JeongJae1203/portfolio',
     featured: true,
   },
-  // {
-  //   id: 2,
-  //   title: 'Weather App',
-  //   description:
-  //     'OpenWeather API를 활용한 날씨 정보 앱. 위치 기반 검색과 5일 예보 기능을 제공합니다.',
-  //   tags: ['React', 'API', 'CSS Modules'],
-  //   image: 'https://images.unsplash.com/photo-1504608524841-42fe6f008b32?w=800&q=80',
-  //   liveUrl: '#',
-  //   githubUrl: '#',
-  //   featured: true,
-  // },
+  {
+    id: 2,
+    title: 'NeverWatchLater',
+    description:
+      '유튜브 ’나중에 볼 동영상’을 Gemini AI 3줄 요약과 D-Day 시스템으로 자동 정리해 주는 린(Lean) 웹 서비스',
+    tags: ['React', 'API', 'CSS Modules'],
+    image: 'https://images.unsplash.com/photo-1504608524841-42fe6f008b32?w=800&q=80',
+    liveUrl: 'https://neverwatchlater-wine.vercel.app/',
+    githubUrl: 'https://github.com/st20916/neverwatchlater',
+    featured: true,
+  },
   // {
   //   id: 3,
   //   title: 'Portfolio Website',
